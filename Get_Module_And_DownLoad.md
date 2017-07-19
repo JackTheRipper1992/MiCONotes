@@ -9,11 +9,19 @@
 如下图接线就可以完成MiCO系统烧录：  
 ![Download_MiCO_Connect.jpg](image/Download_MiCO_Connect.jpg)  
 
-## 搭建环境
+## 一、搭建环境
 
 参考官方提供MiCO环境搭建、测试文档：[http://developer.mico.io/handbooks](http://developer.mico.io/handbooks)
 
-## 下面是尝试第一次download程序后的输出信息：
+## 二、MiCoder IDE编译、下载Hello World
+
+* cmd shell：`mico import https://code.aliyun.com/mico/helloworld.git`
+* 打开 MiCoder IDE，选择菜单栏：File–>Import，选择：General–>Existing Projects into Workspace,然后 Next，点击 Browse ,选择本地 MiCO 项目路径，点击 Finish ，即可导入成功。
+* 打开“Make Target”窗口（菜单栏: Windows->Show View->Other->Make->Make Target）可以显示 Make Target 列表，在 Make Target新建一个make命令：`helloworld@MK3162 total download JTAG=stlink-v2 run`。
+* After helloworld app is downloaded and run, the LED on your platform turns on and off.
+* download程序后的输出信息：
+
+```
     11:27:20 **** Build of configuration Default for project MiCO_A_v3.2.0 ****
     "C:\\Users\\aplex\\Documents\\MiCO_SDK\\MiCO_A_v3.2.0\\make.exe" helloworld@MK3162 total download JTAG=stlink-v2 
     Building Bootloader...
@@ -66,5 +74,13 @@
     Making .openocd_cfg
     
     11:27:35 Build Finished (took 15s.250ms)
+```
+
+## 三、Debug Port(MiCO CLI 命令行调试)
+
+* 引出debug port，接线如图：  
+![debug_port.jpg](image/debug_port.jpg)
+* 开机debug port输出信息如下：
+![debug_port_mesg.png](image/debug_port_mesg.png)
     
     

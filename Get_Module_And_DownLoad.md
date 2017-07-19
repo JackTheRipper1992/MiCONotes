@@ -2,12 +2,12 @@
 
 目标是采用[EMW3162模块](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-16603296919.58.5e3b38dfFbWMQV&id=543818540167)学习MiCO系统。
 
-目前购买了两套套件来学习，主要是因为最开始购买了[EMW3162 GoKit开发套件](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w5003-16605346609.11.26563f7asUT5I8&id=542968676812&scene=taobao_shop)，后来发现GoKit套件直接采用STLink不行，于是又购买了[MiCOKit-3239开发套件](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-16603296919.21.1ef4d404lXIGYd&id=552768451049)，再后来分析EMW3162模块的时候发现其本身是支持JTAG（STLink）重新烧录MiCO系统的：
-![MiCO_Pin.jpg](image/MiCO_Pin.jpg)
-于是推测EMW3162 GoKit的[IOTKIT扩展板](https://item.taobao.com/item.htm?spm=2013.1.0.0.959eebeGjiZjD&id=525550020849&scm=1007.12144.81309.42296_42296&pvid=0f7c9def-25c0-460d-99c3-f1eaff2e057a)上外扩了STLink接口用于Download MiCO系统，通过看原理图，发现确实如此：
-![IOTKIT_Download_Connect.png](image/IOTKIT_Download_Connect.png)
-如下图接线就可以完成MiCO系统烧录：
-![Download_MiCO_Connect.jpg](image/Download_MiCO_Connect.jpg)
+目前购买了两套套件来学习，主要是因为最开始购买了[EMW3162 GoKit开发套件](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w5003-16605346609.11.26563f7asUT5I8&id=542968676812&scene=taobao_shop)，后来发现GoKit套件直接采用STLink不行，于是又购买了[MiCOKit-3239开发套件](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-16603296919.21.1ef4d404lXIGYd&id=552768451049)，再后来分析EMW3162模块的时候发现其本身是支持JTAG（STLink）重新烧录MiCO系统的：  
+![MiCO_Pin.jpg](image/MiCO_Pin.jpg)  
+于是推测EMW3162 GoKit的[IOTKIT扩展板](https://item.taobao.com/item.htm?spm=2013.1.0.0.959eebeGjiZjD&id=525550020849&scm=1007.12144.81309.42296_42296&pvid=0f7c9def-25c0-460d-99c3-f1eaff2e057a)上外扩了STLink接口用于Download MiCO系统，通过看原理图，发现确实如此：  
+![IOTKIT_Download_Connect.png](image/IOTKIT_Download_Connect.png)  
+如下图接线就可以完成MiCO系统烧录：  
+![Download_MiCO_Connect.jpg](image/Download_MiCO_Connect.jpg)  
 
 ## 搭建环境
 

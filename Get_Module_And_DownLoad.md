@@ -13,6 +13,8 @@
 
 参考官方提供MiCO环境搭建、测试文档：[http://developer.mico.io/handbooks](http://developer.mico.io/handbooks)
 
+官方文档中没有提到怎么安装pip这个工具，需要注意，Google一下吧。
+
 ## 二、MiCoder IDE编译、下载Hello World
 
 * cmd shell：`mico import https://code.aliyun.com/mico/helloworld.git`

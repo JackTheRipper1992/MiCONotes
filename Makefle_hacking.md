@@ -38,8 +38,8 @@
     ```Shell
     ifneq ($(BUILD_STRING),)
     -include build/$(CLEANED_BUILD_STRING)/config.mk
-# Now we know the target architecture - include all toolchain makefiles and check one of them can handle the architecture
-     include $(MAKEFILES_PATH)/micoder_toolchain_GCC.mk
+    # Now we know the target architecture - include all toolchain makefiles and check one of them can handle the architecture
+    include $(MAKEFILES_PATH)/micoder_toolchain_GCC.mk
 
     build/$(CLEANED_BUILD_STRING)/config.mk: $(SOURCE_ROOT)Makefile $(MAKEFILES_PATH)/mico_target_config.mk $(MAKEFILES_PATH)/micoder_host_cmd.mk $(MAKEFILES_PATH)/micoder_toolchain_GCC.mk $(MiCO_SDK_MAKEFILES)
         $(QUIET)$(ECHO) $(if $(MiCO_SDK_MAKEFILES),Applying changes made to: $?,Making config file for first time)

@@ -44,7 +44,7 @@
   创建TCP Server端线程。
     * j = accept(localTcpListener_fd, (struct sockaddr *)&addr, (socklen_t *)&sockaddr_t_size);   
     等待Clinet端连接。
-    * if(kNoErr != mico_rtos_create_thread(NULL, MICO_APPLICATION_PRIORITY, "Local Clients", localTcpClient_thread, STACK_SIZE_LOCAL_TCP_CLIENT_THREAD, (mico_thread_arg_t)&j) ) 
+    * if(kNoErr != mico_rtos_create_thread(NULL, MICO_APPLICATION_PRIORITY, "Local Clients", localTcpClient_thread, STACK_SIZE_LOCAL_TCP_CLIENT_THREAD, (mico_thread_arg_t)&j) )   
     创建连接到Server端的Client端处理线程。
         ```
             ...
@@ -94,7 +94,7 @@
               }
             }
         ```
-  * err = mico_rtos_create_thread( NULL, MICO_APPLICATION_PRIORITY, "Remote Client", remoteTcpClient_thread, STACK_SIZE_REMOTE_TCP_CLIENT_THREAD, (mico_thread_arg_t)app_context );
+  * err = mico_rtos_create_thread( NULL, MICO_APPLICATION_PRIORITY, "Remote Client", remoteTcpClient_thread, STACK_SIZE_REMOTE_TCP_CLIENT_THREAD, (mico_thread_arg_t)app_context );  
   创建Client连接远程的Server端。
     ```
         // 注册两个文件描述符事件

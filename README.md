@@ -2,6 +2,7 @@
 
 ## Notes
 
+* [0005 wifi_uart_hacking.md](wifi_uart/wifi_uart_hacking.md)
 * [0004 Makefle_hacking.md](Makefle_hacking.md)
 * [0003 EMW3239_Download_Demo](EMW3239_Download_Demo.md)
 * [0002 GoKit_Download_Wifi_Firmware.md](GoKit_Download_Wifi_Firmware.md)

@@ -10,7 +10,9 @@
 
 ## Description
 
-* 参考文档：[http://developer.mico.io/](http://developer.mico.io/)
+* 参考文档：
+  * [MiCO 物联网工程师开发服务平台](http://developer.mico.io/)
+  * [MiCOKit-3239 开发板](http://developer.mico.io/docs/38)
 * 参考视频：[http://edu.mico.io/](http://edu.mico.io/)
 * 参考Demo：
   * [配置环境](http://developer.mico.io/handbooks/8)；  

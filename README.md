@@ -2,6 +2,7 @@
 
 ## Notes
 
+* [0006 Schematic Hacking](Schematic/README.md)
 * [0005 wifi_uart_hacking.md](wifi_uart/wifi_uart_hacking.md)
 * [0004 Makefle_hacking.md](Makefle_hacking.md)
 * [0003 EMW3239_Download_Demo](EMW3239_Download_Demo.md)
@@ -11,7 +12,8 @@
 ## Description
 
 * 参考文档：
-  * [MiCO 物联网工程师开发服务平台](http://developer.mico.io/)
+  * [MiCO 物联网工程师开发服务平台(新版本)](http://developer.mico.io/)
+  * [MiCO 物联网工程师开发服务平台(老版本)](http://developer.mico.io/docs/5)
   * [MiCOKit-3239 开发板](http://developer.mico.io/docs/38)
 * 参考视频：[http://edu.mico.io/](http://edu.mico.io/)
 * 参考Demo：

@@ -17,8 +17,12 @@
 ## 使用步骤
 
 * 将fog_v2和mqtt文件夹复制到MiCOSDK工程目录`<MiCO SDK path>/libraries/protocols/`中 根据当前你的硬件平台,将`application`文件夹里面的应用程序demo复制到MiCOSDK工程目录`<MiCO_SDK path>/demos/application`中
-* 在FogCloud后台创建一个新的产品,得到新的产品ID。将lib/fog_v2文件夹中的`fog_v2_config.h`中的` FOG_V2_PRODUCT_ID `宏定义替换成云端创建得到的产品ID。
-* 使用Android总动员App去配置网络；
+  ![fog_v2_micokit_enjoy_project_compile.png](image/fog_v2_micokit_enjoy_project_compile.png)
+* 在FogCloud后台创建一个新的产品,得到新的产品ID。将lib/fog_v2文件夹中的`fog_v2_config.h`中的` FOG_V2_PRODUCT_ID `宏定义替换成云端创建得到的产品ID。*我这里的数据表格是没有设置任何字段的，因为还不知道要设置什么字段。*
+  * [庆科云](https://v2.fogcloud.io/)
+  * 产品ID：  
+    ![Fogcloud_Test_Product.png](image/Fogcloud_Test_Product.png)
+* 使用Android总动员App去配置网络（App下载到参考文档《MiCO总动员》中扫码下载）；
 
 
 

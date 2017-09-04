@@ -1,5 +1,13 @@
 # STM32F103VET6
 
+## 硬件资源
+
+![img/STM32F103ZET_Mainboard.jpg](img/STM32F103ZET_Mainboard.jpg)
+
+## 硬件连接图
+
+![img/Connect_Hardware.jpg](img/Connect_Hardware.jpg)
+
 ## Tools
 
 * [JLinker download](src/jlink.zip)  

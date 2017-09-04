@@ -1,4 +1,4 @@
-# STM32F103VET6
+# STM32F103ZET6
 
 * [STM32开发板 STM32核心板 STM32F103ZET6最小系统板arm cortex-M3](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.2ed6e797TyOpRb&id=44397497604&_u=4cfhpg21a28)
 * [STM32F407ZET6/ZGT6开发板 Cortex-M4 STM32最小系统板arm学习板](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.2ed6e797TyOpRb&id=524482277610&_u=4cfhpg259ef)

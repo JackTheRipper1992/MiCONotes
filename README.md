@@ -2,7 +2,7 @@
 
 ## Notes
 
-* [0008 Learning STM32F103VET6](src/0008_STM32F103VET6/README.md)
+* [0008 Learning STM32F103ZET6](src/0008_STM32F103ZET6/README.md)
 * [0007 Import_MiCO_Enjoy_Project](src/0007_Import_MiCO_Enjoy_Project.md)
 * [0006 Schematic_Hacking](src/0006_Schematic/README.md)
 * [0005 wifi_uart_hacking](src/0005_wifi_uart/README.md)

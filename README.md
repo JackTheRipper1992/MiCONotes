@@ -24,6 +24,6 @@
       ![Python_pip_Choose.png](src/image/Python_pip_Choose.png)
   * [IDE Download](http://developer.mico.io/handbooks/9)；
   * 在安装IDE之后，打开IDE就能看到默认的Demo了；
-  * 根据[《0004 Makefle_hacking.md》](Makefle_hacking.md)中的分析，大体可知编译流程；
+  * 根据[《0004 Makefle_hacking.md》](src/0004_Makefle_hacking.md)中的分析，大体可知编译流程；
   * 编写学习、测试程序，可在Demo中直接使用，可边学习，边参考，以此完成任务。  
     ![MiCO_SDK_IDE.png](src/image/MiCO_SDK_IDE.png)

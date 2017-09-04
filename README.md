@@ -2,13 +2,14 @@
 
 ## Notes
 
-* [0007 Import_MiCO_Enjoy_Project](Import_MiCO_Enjoy_Project.md)
-* [0006 Schematic_Hacking](Schematic/README.md)
-* [0005 wifi_uart_hacking](wifi_uart/README.md)
-* [0004 Makefle_hacking.md](Makefle_hacking.md)
-* [0003 EMW3239_Download_Demo](EMW3239_Download_Demo.md)
-* [0002 GoKit_Download_Wifi_Firmware](GoKit_Download_Wifi_Firmware.md)
-* [0001 Get_Module_And_DownLoad](Get_Module_And_DownLoad.md)
+* [0008 Learning STM32F103VET6](src/0008_STM32F103VET6/README.md)
+* [0007 Import_MiCO_Enjoy_Project](src/0007_Import_MiCO_Enjoy_Project.md)
+* [0006 Schematic_Hacking](src/0006_Schematic/README.md)
+* [0005 wifi_uart_hacking](src/0005_wifi_uart/README.md)
+* [0004 Makefle_hacking.md](src/0004_Makefle_hacking.md)
+* [0003 EMW3239_Download_Demo](src/0003_EMW3239_Download_Demo.md)
+* [0002 GoKit_Download_Wifi_Firmware](src/0002_GoKit_Download_Wifi_Firmware.md)
+* [0001 Get_Module_And_DownLoad](src/0001_Get_Module_And_DownLoad.md)
 
 ## Description
 
@@ -20,9 +21,9 @@
 * 参考Demo：
   * [配置环境](http://developer.mico.io/handbooks/8)；  
     请注意在安装Python的时候选择[pip插件](https://pypi.python.org/pypi/pip#downloads)，如果没有安装，请单独安装，[Google一下吧](http://bfy.tw/CymH)；
-      ![Python_pip_Choose.png](image/Python_pip_Choose.png)
+      ![Python_pip_Choose.png](src/image/Python_pip_Choose.png)
   * [IDE Download](http://developer.mico.io/handbooks/9)；
   * 在安装IDE之后，打开IDE就能看到默认的Demo了；
   * 根据[《0004 Makefle_hacking.md》](Makefle_hacking.md)中的分析，大体可知编译流程；
   * 编写学习、测试程序，可在Demo中直接使用，可边学习，边参考，以此完成任务。  
-    ![MiCO_SDK_IDE.png](image/MiCO_SDK_IDE.png)
+    ![MiCO_SDK_IDE.png](src/image/MiCO_SDK_IDE.png)

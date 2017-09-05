@@ -16,8 +16,8 @@
 
 void delay(unsigned int count)
 {
-	int i;
-	for(i=0;i<count;i++);
+    int i;
+    for(i=0;i<count;i++);
 }
 
 #define LED0_OFF GPIO_SetBits(GPIOE,GPIO_Pin_6); 
@@ -25,21 +25,22 @@ void delay(unsigned int count)
 
 int main()
 {
-	GPIO_InitTypeDef GPIO_InitStructure;
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE,ENABLE); 
-	
-	GPIO_InitStructure.GPIO_Pin=GPIO_Pin_6 ;            
+    GPIO_InitTypeDef GPIO_InitStructure;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE,ENABLE); 
+    
+    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_6 ;            
     GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;  
     GPIO_InitStructure.GPIO_Mode=GPIO_Mode_Out_PP;  
-	
+    
     GPIO_Init(GPIOE,&GPIO_InitStructure); 
-	
+    
     while(1)
-	{
-		LED0_ON;
-		delay(0x2fffff);
-		LED0_OFF;
-		delay(0x2fffff);
-	}
+    {
+        LED0_ON;
+        delay(0x2fffff);
+        LED0_OFF;
+        delay(0x2fffff);
+    }
 }
+
 ```

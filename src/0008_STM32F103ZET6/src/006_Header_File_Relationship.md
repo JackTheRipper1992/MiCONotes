@@ -1,6 +1,11 @@
 # Header File Relationship
 
-![../img/Project_Header_File.png](../img/Project_Header_File.png)
+## 头文件架构
+
+* StdPeriph库头文件架构  
+  ![../img/StdPeriph_Head_File_Arch.png](../img/StdPeriph_Head_File_Arch.png)
+* CMSIS库头文件架构  
+  ![../img/CMSIS_Head_File_Arch.png](../img/CMSIS_Head_File_Arch.png)
 
 ## 头文件关系解析
 
@@ -9,6 +14,7 @@
   Auto generated Run-Time-Environment Component Configuration File,  ** Do not modify ! **, automatically created during the Build Project step. For each selected Software Component it contains #define statements required by the component. 
 * RTE_Device.h  
   ![../img/RTE_Device_H.png](../img/RTE_Device_H.png)
+  ![../img/CMSIS_Driver_Header_Map.png](../img/CMSIS_Driver_Header_Map.png)  
   * CMSIS(Cortex Microcontroller Software Interface Components): CMSIS is essentially just register definitions and no code, so CMSIS == direct register access. Keep in mind that CMSIS, unlike the other two, is defined by ARM and not ST. "CMSIS" is the Cortex Microcontroller Software Interface Standard. It's an ARM standard, so the code should be more or less portable between Cortex implementations.
     * [CMSIS](http://www2.keil.com/mdk5/cmsis/)
     * [CMSIS Workshop](http://www2.keil.com/mdk5/learn/cmsis_workshop/)
@@ -41,6 +47,8 @@
 
 ## 结论
 
-* 从目前来看，RTE_device.h是属于CMSIS中要使用的部分；
-* 使用StdPeriph Drivers不一定要使用CMSIS Driver，CMSIS Driver相关的文档还是比较少的。
+* RTE_device.h是属于CMSIS中要使用的部分；
+* 两套可使用库：
+  * StdPeriph Drivers
+  * CMSIS Driver
 

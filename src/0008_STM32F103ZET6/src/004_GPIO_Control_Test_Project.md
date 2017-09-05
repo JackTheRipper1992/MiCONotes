@@ -11,7 +11,7 @@
 
 ## 源代码
 
-```
+```C
 #include "stm32f10x_gpio.h"
 
 void delay(unsigned int count)

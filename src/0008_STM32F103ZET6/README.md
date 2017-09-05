@@ -5,6 +5,7 @@
 
 ## 学习测试项目
 
+* [007_Vim_As_Keil_Editor](src/007_Vim_As_Keil_Editor.md)
 * [006_Header_File_Relationship](src/006_Header_File_Relationship.md)
 * [005_Use_Keil_Help_For_Work](src/005_Use_Keil_Help_For_Work.md)
 * [004_GPIO_Control_Test_Project](src/004_GPIO_Control_Test_Project.md)

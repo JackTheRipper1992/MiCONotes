@@ -27,6 +27,7 @@
     * [Configuration Wizard](http://www.keil.com/support/man/docs/uv4/uv4_ut_configwizard.htm):  
       ![../img/Keil_Configuration_Wizard.png](../img/Keil_Configuration_Wizard.png)
     * 这是STM32需要使用的外设的使能和引脚配置。
+  * [Configuration via RTE_Device.h](http://www.keil.com/pack/doc/sam_esv7/general/html/classic_pg.html)
 * stm32f10x_gpio.h
   ![../img/GPIO_Header_File.png](../img/GPIO_Header_File.png)
   * stm32f10x.h

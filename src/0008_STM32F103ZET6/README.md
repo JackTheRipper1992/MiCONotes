@@ -18,6 +18,7 @@
 
 ## 学习测试项目
 
+* [005_Use_Keil_Help_For_Work](src/005_Use_Keil_Help_For_Work.md)
 * [004_GPIO_Control_Test_Project](src/004_GPIO_Control_Test_Project.md)
 * [003_Clock_Setting_Hacking](src/003_Clock_Setting_Hacking.md)
 * [002_Boot_Code(startup_stm32f10x_hd.s)_Hacking](src/002_Boot_Code_Hacking.md)

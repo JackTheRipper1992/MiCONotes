@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\led.o"
+".\objects\key.o"
+".\objects\delay.o"
+".\objects\exti.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_i2c.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\dma_stm32f10x.o"
+".\objects\gpio_stm32f10x.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\system_stm32f10x.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_dma.o"
+--strict --scatter ".\Objects\STM32F103ZET6.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STM32F103ZET6.map" -o .\Objects\STM32F103ZET6.axf

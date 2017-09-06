@@ -2,6 +2,7 @@
 
 ## 参考资料
 
+* [ARM Cortex-M3 (STM32F103) Tutorial - FreeRTOS - Task](http://embeddedsystemengineering.blogspot.com/2016/04/arm-cortex-m3-stm32f103-tutorial.html)
 * [CMSIS-RTOS Choices: Keil RTX or FreeRTOS](http://www.keil.com/pr/article/1280.htm)
 * [CMSIS-RTOS2  Version 2.1.1](http://www.keil.com/pack/doc/CMSIS/RTOS2/html/index.html)
 * [cmsis_os2.h header file](http://www.keil.com/pack/doc/CMSIS/RTOS2/html/genRTOS2IF.html#cmsis_os2_h)
@@ -68,7 +69,7 @@
 ## CMSIS RTOS接口编程
 * 涉及头文件
   ```C
-    #include "cmsis_os2.h"
+  #include "cmsis_os2.h"
   ```
 * 示例代码：
   ```C

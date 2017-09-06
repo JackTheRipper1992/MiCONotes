@@ -3,10 +3,12 @@
 
 #include "stm32f10x.h"
 #include "led.h"
-#include "key.h"
 #include "delay.h"
-#include "exti.h"
 #include "stdio.h"
-#include "debug_port.h"
+#include "usart1.h"
+
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
 
 #endif /* __ZENGJF_H */

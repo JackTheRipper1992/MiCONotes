@@ -1,14 +1,19 @@
 #include "zengjf.h"
 
-int main()
-{    
-    LED_GPIO_Config(); 
+int main(void)
+{	
+    USART1_Config(115200);
+    LED_GPIO_Config();
+
+    printf("\r\n Hardware Auto Detect System.");
+    printf("\r\n Version: 0.0.1");
+    printf("\r\n           ---- Designed By zengjf \r\n");
     
-    while(1)
-    {
-        LED0_ON;
-        Delay(0x2fffff);
-        LED0_OFF;
-        Delay(0x2fffff);
+    char str[512] = {0};
+
+	while(1)
+	{
+        scanf("%s", str);
+        memset(str, 0, strlen(str));
     }
 }

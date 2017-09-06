@@ -14,9 +14,10 @@
 
 #include "stm32f10x.h"
 
-#define LED0_OFF GPIO_SetBits(GPIOE,GPIO_Pin_6);    //PA8输出高电平
-#define LED0_ON GPIO_ResetBits(GPIOE,GPIO_Pin_6);   //PA8输出低电平
+#define LED0_OFF GPIO_SetBits(GPIOE,GPIO_Pin_6);     //PE6输出高电平
+#define LED0_ON  GPIO_ResetBits(GPIOE,GPIO_Pin_6);   //PE6输出低电平
 
 void LED_GPIO_Config(void);   /* LED 端口初始化 */
+void led_toggle(GPIO_TypeDef * gpio, uint16_t pin);
 
 #endif /* __LED_H */

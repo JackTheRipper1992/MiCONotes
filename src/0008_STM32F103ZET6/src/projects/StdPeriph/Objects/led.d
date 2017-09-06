@@ -16,8 +16,8 @@
 .\objects\led.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\led.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
 .\objects\led.o: zengjf/include/led.h
-.\objects\led.o: zengjf/include/key.h
 .\objects\led.o: zengjf/include/delay.h
-.\objects\led.o: zengjf/include/exti.h
 .\objects\led.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\led.o: zengjf/include/debug_port.h
+.\objects\led.o: zengjf/include/usart1.h
+.\objects\led.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\string.h
+.\objects\led.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdarg.h

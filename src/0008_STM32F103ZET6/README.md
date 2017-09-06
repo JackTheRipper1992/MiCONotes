@@ -5,6 +5,7 @@
 
 ## 学习测试项目
 
+* [009_Uart1_As_Debug_Port](src/009_Uart1_As_Debug_Port.md)
 * [008_Keil_Manage_a_Multi-Project](src/008_Keil_Manage_a_Multi-Project.md)
 * [007_Vim_As_Keil_Editor](src/007_Vim_As_Keil_Editor.md)
 * [006_Header_File_Relationship](src/006_Header_File_Relationship.md)
@@ -15,6 +16,8 @@
 * [001_Create_Project](src/001_Create_Project.md)
 
 ## 硬件资源
+
+原理图：[STM32F103ZET6_Schematics.pdf](tools/STM32F103ZET6_Schematics.pdf)
 
 ![img/STM32F103ZET_Mainboard.jpg](img/STM32F103ZET_Mainboard.jpg)
 

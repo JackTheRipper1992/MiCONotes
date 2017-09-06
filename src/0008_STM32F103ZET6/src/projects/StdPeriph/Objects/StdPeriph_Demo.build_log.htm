@@ -30,25 +30,50 @@ Rebuild target 'Target'
 compiling delay.c...
 compiling main.c...
 compiling led.c...
+compiling clib_arm.c...
 compiling usart1.c...
+compiling os_systick.c...
+compiling cmsis_os2.c...
 compiling misc.c...
 compiling stm32f10x_exti.c...
 compiling stm32f10x_gpio.c...
+assembling startup_stm32f10x_hd.s...
 compiling stm32f10x_rcc.c...
 compiling stm32f10x_usart.c...
-assembling startup_stm32f10x_hd.s...
 compiling system_stm32f10x.c...
+compiling freertos_evr.c...
+compiling event_groups.c...
+compiling list.c...
+compiling heap_4.c...
+compiling port.c...
+compiling queue.c...
+compiling timers.c...
+compiling tasks.c...
+compiling croutine.c...
 linking...
-Program Size: Code=3120 RO-data=400 RW-data=32 ZI-data=1024  
+Program Size: Code=9816 RO-data=400 RW-data=164 ZI-data=12164  
 ".\Objects\StdPeriph_Demo.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS.5.1.0.pack
-                ARM::CMSIS:CORE:5.0.2
+                ::CMSIS:RTOS2:2.1.1 (API)
                 CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.1
    * Component: CORE Version: 5.0.2
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.9.1.0.pack
+                ARM.FreeRTOS::RTOS:Coroutines:9.0.0
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Coroutines Version: 9.0.0
+   * Component: Heap Variant: Heap_4 Version: 9.0.0
+   * Component: Event Groups Version: 9.0.0
+   * Component: Timers Version: 9.0.0
+   * Component: FreeRTOS Version: 9.1.0
+   * Component: Core Version: 9.0.0
+   * Component: Config Variant: CMSIS RTOS2 Version: 9.0.0
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
@@ -63,14 +88,57 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\Device\STM32F103ZE
+  .\RTE\RTOS
   .\RTE\_Target
+  D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\CMSIS\RTOS2\FreeRTOS\Include
+  D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\include
+  D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\portable\RVDS\ARM_CM3
   D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include
+  D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include
   D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
   D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc
 
 <h2>Collection of Component Files used:</h2>
 
+   * Component: ::CMSIS:RTOS2:2.1.1 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
+
    * Component: ARM::CMSIS:CORE:5.0.2
+
+   * Component: ARM.FreeRTOS::RTOS:Coroutines:9.0.0
+      Source file:   Source\croutine.c
+      Include file:  Source\include\croutine.h
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:9.0.0
+      Source file:   Source\portable\MemMang\heap_4.c
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:9.0.0
+      Include file:  Source\include\event_groups.h
+      Source file:   Source\event_groups.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:9.0.0
+      Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
+
+   * Component: ARM::CMSIS:RTOS2:FreeRTOS:9.1.0
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c
+
+   * Component: ARM.FreeRTOS::RTOS:Core:9.0.0
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h
+      Include file:  Source\include\FreeRTOS.h
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\task.h
+      Source file:   Source\queue.c
+      Source file:   Source\tasks.c
+      Include file:  Source\include\semphr.h
+      Source file:   Source\portable\RVDS\ARM_CM3\port.c
+      Source file:   Source\list.c
+
+   * Component: ARM.FreeRTOS::RTOS:Config:CMSIS RTOS2:9.0.0
+      Include file:  CMSIS\RTOS2\FreeRTOS\Config\ARMCM\FreeRTOSConfig.h
 
    * Component: Keil::Device:Startup:1.0.0
       Source file:   Device\Source\ARM\STM32F1xx_OPT.s
@@ -100,7 +168,7 @@ Package Vendor: Keil
    * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

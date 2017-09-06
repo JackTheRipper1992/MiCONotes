@@ -21,3 +21,5 @@
 .\objects\main.o: zengjf/include/usart1.h
 .\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stddef.h

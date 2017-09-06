@@ -5,6 +5,7 @@
 
 ## 学习测试项目
 
+* [010_Learning_FreeRTOS_And_CMSIS_RTOS](src/010_Learning_FreeRTOS_And_CMSIS_RTOS.md)
 * [009_Uart1_As_Debug_Port](src/009_Uart1_As_Debug_Port.md)
 * [008_Keil_Manage_a_Multi-Project](src/008_Keil_Manage_a_Multi-Project.md)
 * [007_Vim_As_Keil_Editor](src/007_Vim_As_Keil_Editor.md)

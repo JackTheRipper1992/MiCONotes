@@ -4,7 +4,7 @@
  *      *** Do not modify ! ***
  *
  * Project: 'StdPeriph_Demo' 
- * Target:  'Target' 
+ * Target:  'Target 1' 
  */
 
 #ifndef RTE_COMPONENTS_H

@@ -19,7 +19,12 @@
 .\objects\main.o: zengjf/include/delay.h
 .\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: zengjf/include/usart1.h
+.\objects\main.o: zengjf/include/exti.h
+.\objects\main.o: zengjf/include/json.h
 .\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main.o: D:\Software\keil\install\ARM\PACK\Keil\Jansson\1.0.0\src\jansson.h
+.\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: D:\Software\keil\install\ARM\PACK\Keil\Jansson\1.0.0\src\jansson_config.h
 .\objects\main.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stddef.h

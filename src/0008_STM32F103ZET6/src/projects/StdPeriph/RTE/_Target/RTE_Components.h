@@ -16,6 +16,7 @@
  */
 #define CMSIS_device_header "stm32f10x.h"
 
+#define JANSSON
 #define RTE_CMSIS_RTOS2                 /* CMSIS-RTOS2 */
         #define RTE_CMSIS_RTOS2_FreeRTOS        /* CMSIS-RTOS2 FreeRTOS */
 #define RTE_DEVICE_STDPERIPH_EXTI

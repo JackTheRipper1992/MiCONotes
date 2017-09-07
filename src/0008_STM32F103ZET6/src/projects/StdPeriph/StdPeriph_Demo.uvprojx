@@ -404,10 +404,23 @@
               <FileType>1</FileType>
               <FilePath>.\zengjf\usart1.c</FilePath>
             </File>
+            <File>
+              <FileName>exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\zengjf\exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>json.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\zengjf\json.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Data Exchange</GroupName>
         </Group>
         <Group>
           <GroupName>::Device</GroupName>
@@ -477,6 +490,12 @@
           <targetInfo name="Target"/>
         </targetInfos>
       </component>
+      <component Cclass="Data Exchange" Cgroup="JSON" Csub="Jansson" Cvendor="Keil" Cversion="2.7.0" condition="ARMCC">
+        <package license="doc\license.txt" name="Jansson" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="1.0.0"/>
+        <targetInfos>
+          <targetInfo name="Target"/>
+        </targetInfos>
+      </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="STM32F1xx CMSIS">
         <package name="STM32F1xx_DFP" schemaVersion="1.4.0" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
         <targetInfos>
@@ -515,6 +534,14 @@
       </component>
     </components>
     <files>
+      <file attr="config" category="source" name="src\jansson_config.c" version="2.7.0">
+        <instance index="0">RTE\Data_Exchange\jansson_config.c</instance>
+        <component Cclass="Data Exchange" Cgroup="JSON" Csub="Jansson" Cvendor="Keil" Cversion="2.7.0" condition="ARMCC"/>
+        <package license="doc\license.txt" name="Jansson" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="1.0.0"/>
+        <targetInfos>
+          <targetInfo name="Target"/>
+        </targetInfos>
+      </file>
       <file attr="config" category="header" name="RTE_Driver\Config\RTE_Device.h" version="1.1.2">
         <instance index="0">RTE\Device\STM32F103ZE\RTE_Device.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="STM32F1xx CMSIS"/>

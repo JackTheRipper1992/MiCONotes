@@ -1,48 +1,26 @@
 #include "zengjf.h"
 
+extern osSemaphoreId_t sid_Thread_Semaphore; 
+
 void EXTI0_IRQHandler(void)
 {     
-    /*延时消抖*/
-    Delay(10000);    
-    /*检查指定的EXTI0线路触发请求发生与否*/    
-    if(EXTI_GetITStatus(EXTI_Line0) != RESET)      
-    {      
-        /*控制LED的IO电平翻转*/
-        GPIO_WriteBit(GPIOE, GPIO_Pin_6, (BitAction)(1-(GPIO_ReadOutputDataBit(GPIOE, GPIO_Pin_6))));
-    }
-    /*清除EXTI0线路挂起位*/
-    EXTI_ClearITPendingBit(EXTI_Line0);  
+    osSemaphoreRelease (sid_Thread_Semaphore);
+
+    EXTI_ClearITPendingBit(EXTI_Line0); 
 }
 
 void EXTI4_IRQHandler(void)
 {   
-    /*延时消抖*/
-    Delay(10000);               
-    /*检查指定的EXTI13线路触发请求发生与否*/    
-    if(EXTI_GetITStatus(EXTI_Line4) != RESET)
-    {   
-        /*控制LED的IO电平翻转*/
-        GPIO_WriteBit(GPIOE, GPIO_Pin_5, (BitAction)(1-(GPIO_ReadOutputDataBit(GPIOE, GPIO_Pin_5))));
-    }
-    /*检查指定的EXTI15线路触发请求发生与否*/    
-
-    /*清除EXTI13线路挂起位*/
+    osSemaphoreRelease (sid_Thread_Semaphore);
+    
     EXTI_ClearITPendingBit(EXTI_Line4); 
-
 }
 
-/*
- * 函数名：NVIC_Configuration
- * 描述  ：配置嵌套向量中断控制器NVIC
- * 输入  ：无
- * 输出  ：无
- * 调用  ：内部调用
- */
-static void NVIC_Configuration(void)
+static void EXTI_NVIC_Configuration(void)
 {
     NVIC_InitTypeDef NVIC_InitStructure;
     /*设置NVIC中断分组2:2位抢占优先级，2位响应优先级*/
-    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);    
+    // NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);    
 
     /*使能按键所在的外部中断通道*/
     NVIC_InitStructure.NVIC_IRQChannel = EXTI4_IRQn;
@@ -68,14 +46,6 @@ static void NVIC_Configuration(void)
 
 }
 
-
-/*
- * 函数名：EXTI_Config
- * 描述  ：配置PA0,PA13,PA15为线中断口，并设置中断优先级
- * 输入  ：无
- * 输出  ：无
- * 调用  ：外部调用
- */
 void EXTI_Config(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
@@ -127,8 +97,6 @@ void EXTI_Config(void)
     EXTI_Init(&EXTI_InitStructure);        
 
     /* 配置中断控制器NVIC */
-    NVIC_Configuration();
-
+    EXTI_NVIC_Configuration();
 }
-
 

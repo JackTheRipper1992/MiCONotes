@@ -15,4 +15,6 @@
 #include <jansson.h>
 #include "cmsis_os2.h"
 
+#include "Context.h"
+
 #endif /* __ZENGJF_H */

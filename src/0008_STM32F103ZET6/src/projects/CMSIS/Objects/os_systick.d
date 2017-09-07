@@ -1,0 +1,10 @@
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\os_tick.h
+.\objects\os_systick.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\os_systick.o: .\RTE\_Target\RTE_Components.h
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_version.h
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_compiler.h
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h
+.\objects\os_systick.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h

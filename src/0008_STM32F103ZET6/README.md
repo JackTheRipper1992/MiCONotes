@@ -5,6 +5,7 @@
 
 ## 学习测试项目
 
+* [013_CMSIS-Driver_UART_As_Debug_Port](src/013_CMSIS-Driver_UART_As_Debug_Port.md)
 * [012_Keil_JSON_Parse_Lib](src/012_Keil_JSON_Parse_Lib.md)
 * [011_External_Interrupt_With_CMSIS_RTOS](src/011_External_Interrupt_With_CMSIS_RTOS.md)
 * [010_Learning_FreeRTOS_And_CMSIS_RTOS](src/010_Learning_FreeRTOS_And_CMSIS_RTOS.md)

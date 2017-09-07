@@ -1,0 +1,81 @@
+Dependencies for Project 'CMSIS', Target 'Target': (DO NOT MODIFY !)
+F (.\main.c)(0x59B0FEA2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\string.h)(0x57F606B8)
+F (.\zengjf\stdio\stdin_USART.c)(0x59B0FCD9)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\stdin_usart.o --omf_browse .\objects\stdin_usart.crf --depend .\objects\stdin_usart.d)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_USART.h)(0x58AA9906)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_Common.h)(0x58AA9904)
+I (D:\Software\keil\install\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+F (.\zengjf\stdio\stderr_USART.c)(0x59B0F603)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\stderr_usart.o --omf_browse .\objects\stderr_usart.crf --depend .\objects\stderr_usart.d)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_USART.h)(0x58AA9906)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_Common.h)(0x58AA9904)
+I (D:\Software\keil\install\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+F (.\zengjf\stdio\stdout_USART.c)(0x59B0F5EF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\stdout_usart.o --omf_browse .\objects\stdout_usart.crf --depend .\objects\stdout_usart.d)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_USART.h)(0x58AA9906)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_Common.h)(0x58AA9904)
+I (D:\Software\keil\install\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+F (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\USART_STM32F10x.c)(0x56F9DE5C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\usart_stm32f10x.o --omf_browse .\objects\usart_stm32f10x.crf --depend .\objects\usart_stm32f10x.d)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\USART_STM32F10x.h)(0x56F9DE5C)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825386C)
+I (.\RTE\_Target\RTE_Components.h)(0x59B0EF16)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_version.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_compiler.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h)(0x5825386C)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\GPIO_STM32F10x.h)(0x5617291E)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\DMA_STM32F10x.h)(0x52B2710E)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_USART.h)(0x58AA9906)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_Common.h)(0x58AA9904)
+I (D:\Software\keil\install\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (.\RTE\Device\STM32F103ZE\RTE_Device.h)(0x59B0F19B)
+F (D:\Software\keil\install\ARM\PACK\Keil\ARM_Compiler\1.3.0\Source\retarget_io.c)(0x584E29BE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\retarget_io.o --omf_browse .\objects\retarget_io.crf --depend .\objects\retarget_io.d)
+I (D:\Software\keil\install\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\assert.h)(0x57F606B6)
+I (D:\Software\keil\install\ARM\ARMCC\include\rt_sys.h)(0x57F606B8)
+I (.\RTE\_Target\RTE_Components.h)(0x59B0EF16)
+F (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\DMA_STM32F10x.c)(0x5617291E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\dma_stm32f10x.o --omf_browse .\objects\dma_stm32f10x.crf --depend .\objects\dma_stm32f10x.d)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\DMA_STM32F10x.h)(0x52B2710E)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\STM32F10x.h)(0x5825386C)
+I (.\RTE\_Target\RTE_Components.h)(0x59B0EF16)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_version.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_compiler.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h)(0x5825386C)
+F (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\GPIO_STM32F10x.c)(0x571EF70A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\gpio_stm32f10x.o --omf_browse .\objects\gpio_stm32f10x.crf --depend .\objects\gpio_stm32f10x.d)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\GPIO_STM32F10x.h)(0x5617291E)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825386C)
+I (.\RTE\_Target\RTE_Components.h)(0x59B0EF16)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_version.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_compiler.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h)(0x5825386C)
+F (RTE\Device\STM32F103ZE\RTE_Device.h)(0x59B0F19B)()
+F (RTE\Device\STM32F103ZE\startup_stm32f10x_hd.s)(0x5825386C)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
+F (RTE\Device\STM32F103ZE\system_stm32f10x.c)(0x5825386C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103ZE-I.\RTE\_Target-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include-ID:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F10X_HD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825386C)
+I (.\RTE\_Target\RTE_Components.h)(0x59B0EF16)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_version.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_compiler.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h)(0x59840DC6)
+I (D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h)(0x5825386C)

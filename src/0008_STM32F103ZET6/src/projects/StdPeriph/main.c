@@ -58,7 +58,7 @@ int main(void)
     osThreadNew(vTaskLedRed, NULL, NULL);       // Create application thread
     osThreadNew(vTaskDebugPort, NULL, NULL);    // Create application thread
     
-    sid_Thread_Semaphore = osSemaphoreNew(2, 2, NULL);
+    sid_Thread_Semaphore = osSemaphoreNew(1, 0, NULL);
     if (!sid_Thread_Semaphore) {
         printf("get sid_Thread_Semaphore error."); // Semaphore object not created, handle failure
     }

@@ -8,11 +8,6 @@
 .\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\include\FreeRTOS.h
 .\objects\freertos_evr.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\freertos_evr.o: .\RTE\RTOS\FreeRTOSConfig.h
-.\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
-.\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\core_cm3.h
-.\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_version.h
-.\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
-.\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\os_tick.h
 .\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\include\projdefs.h
 .\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\include\portable.h
 .\objects\freertos_evr.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\include\deprecated_definitions.h

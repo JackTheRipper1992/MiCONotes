@@ -8,7 +8,7 @@ void jansson_pack_test(void)
     char *out;
     json_error_t error;
     
-    printf("\r\n---------Jansson Test Begin---------\r\n");
+    printf("\r\n\r\n---------Jansson Test Begin---------\r\n");
 
     /* Build an empty JSON object */
     root = json_pack("{s:i}", "zengjf", 5);

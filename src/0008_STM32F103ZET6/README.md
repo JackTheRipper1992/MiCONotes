@@ -3,8 +3,14 @@
 * [STM32开发板 STM32核心板 STM32F103ZET6最小系统板arm cortex-M3](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.2ed6e797TyOpRb&id=44397497604&_u=4cfhpg21a28)
 * [STM32F407ZET6/ZGT6开发板 Cortex-M4 STM32最小系统板arm学习板](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.2ed6e797TyOpRb&id=524482277610&_u=4cfhpg259ef)
 
+## 示例源代码
+
+* [CMSIS代码项目](https://github.com/ZengjfOS/MiCONotes/tree/master/src/0008_STM32F103ZET6/src/projects/CMSIS)
+* [StdPeriph代码项目](https://github.com/ZengjfOS/MiCONotes/tree/master/src/0008_STM32F103ZET6/src/projects/StdPeriph)
+
 ## 学习测试项目
 
+* [014_Command_Line_Interpreter](src/014_Command_Line_Interpreter.md)
 * [013_CMSIS-Driver_UART_As_Debug_Port](src/013_CMSIS-Driver_UART_As_Debug_Port.md)
 * [012_Keil_JSON_Parse_Lib](src/012_Keil_JSON_Parse_Lib.md)
 * [011_External_Interrupt_With_CMSIS_RTOS](src/011_External_Interrupt_With_CMSIS_RTOS.md)

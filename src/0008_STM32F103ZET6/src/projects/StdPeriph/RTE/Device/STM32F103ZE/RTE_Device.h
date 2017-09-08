@@ -196,10 +196,10 @@
 
 // <e> USART2 (Universal synchronous asynchronous receiver transmitter)
 // <i> Configuration settings for Driver_USART2 in component ::CMSIS Driver:USART
-#define RTE_USART2                      0
+#define RTE_USART2                      1
 
 //   <o> USART2_TX Pin <0=>Not Used <1=>PA2
-#define RTE_USART2_TX_PORT_ID_DEF       0
+#define RTE_USART2_TX_PORT_ID_DEF       1
 #if    (RTE_USART2_TX_PORT_ID_DEF == 0)
 #define RTE_USART2_TX_DEF               0
 #elif  (RTE_USART2_TX_PORT_ID_DEF == 1)
@@ -211,7 +211,7 @@
 #endif
 
 //   <o> USART2_RX Pin <0=>Not Used <1=>PA3
-#define RTE_USART2_RX_PORT_ID_DEF       0
+#define RTE_USART2_RX_PORT_ID_DEF       1
 #if    (RTE_USART2_RX_PORT_ID_DEF == 0)
 #define RTE_USART2_RX_DEF               0
 #elif  (RTE_USART2_RX_PORT_ID_DEF == 1)
@@ -390,7 +390,7 @@
 
 // <e> USART3 (Universal synchronous asynchronous receiver transmitter)
 // <i> Configuration settings for Driver_USART3 in component ::CMSIS Driver:USART
-#define RTE_USART3                      0
+#define RTE_USART3                      1
 
 //   <o> USART3_TX Pin <0=>Not Used <1=>PB10
 #define RTE_USART3_TX_PORT_ID_DEF       0
@@ -454,10 +454,10 @@
 
 //   <e> USART3 Partial Pin Remap
 //   <i> Enable USART3 Partial Pin Remapping
-#define RTE_USART3_REMAP_PARTIAL        0
+#define RTE_USART3_REMAP_PARTIAL        1
 
 //     <o> USART3_TX Pin <0=>Not Used <1=>PC10
-#define RTE_USART3_TX_PORT_ID_PARTIAL   0
+#define RTE_USART3_TX_PORT_ID_PARTIAL   1
 #if    (RTE_USART3_TX_PORT_ID_PARTIAL == 0)
 #define RTE_USART3_TX_PARTIAL           0
 #elif  (RTE_USART3_TX_PORT_ID_PARTIAL == 1)
@@ -469,7 +469,7 @@
 #endif
 
 //     <o> USART3_RX Pin <0=>Not Used <1=>PC11
-#define RTE_USART3_RX_PORT_ID_PARTIAL   0
+#define RTE_USART3_RX_PORT_ID_PARTIAL   1
 #if    (RTE_USART3_RX_PORT_ID_PARTIAL == 0)
 #define RTE_USART3_RX_PARTIAL           0
 #elif  (RTE_USART3_RX_PORT_ID_PARTIAL == 1)
@@ -646,11 +646,11 @@
 
 // <e> UART4 (Universal asynchronous receiver transmitter)
 // <i> Configuration settings for Driver_USART4 in component ::CMSIS Driver:USART
-#define RTE_UART4                       0
+#define RTE_UART4                       1
 #define RTE_UART4_AF_REMAP              AFIO_UNAVAILABLE_REMAP
 
 //   <o> UART4_TX Pin <0=>Not Used <1=>PC10
-#define RTE_UART4_TX_ID                 0
+#define RTE_UART4_TX_ID                 1
 #if    (RTE_UART4_TX_ID == 0)
 #define RTE_UART4_TX                    0
 #elif  (RTE_UART4_TX_ID == 1)
@@ -662,7 +662,7 @@
 #endif
 
 //   <o> UART4_RX Pin <0=>Not Used <1=>PC11
-#define RTE_UART4_RX_ID                 0
+#define RTE_UART4_RX_ID                 1
 #if    (RTE_UART4_RX_ID == 0)
 #define RTE_UART4_RX                    0
 #elif  (RTE_UART4_RX_ID == 1)
@@ -705,11 +705,11 @@
 
 // <e> UART5 (Universal asynchronous receiver transmitter)
 // <i> Configuration settings for Driver_USART5 in component ::CMSIS Driver:USART
-#define RTE_UART5                       0
+#define RTE_UART5                       1
 #define RTE_UART5_AF_REMAP              AFIO_UNAVAILABLE_REMAP
 
 //   <o> UART5_TX Pin <0=>Not Used <1=>PC12
-#define RTE_UART5_TX_ID                 0
+#define RTE_UART5_TX_ID                 1
 #if    (RTE_UART5_TX_ID == 0)
 #define RTE_UART5_TX                    0
 #elif  (RTE_UART5_TX_ID == 1)
@@ -721,7 +721,7 @@
 #endif
 
 //   <o> UART5_RX Pin <0=>Not Used <1=>PD2
-#define RTE_UART5_RX_ID                 0
+#define RTE_UART5_RX_ID                 1
 #if    (RTE_UART5_RX_ID == 0)
 #define RTE_UART5_RX                    0
 #elif  (RTE_UART5_RX_ID == 1)
@@ -736,7 +736,7 @@
 
 // <e> I2C1 (Inter-integrated Circuit Interface 1)
 // <i> Configuration settings for Driver_I2C1 in component ::CMSIS Driver:I2C
-#define RTE_I2C1                        0
+#define RTE_I2C1                        1
 
 //   <o> I2C1_SCL Pin <0=>PB6
 #define RTE_I2C1_SCL_PORT_ID_DEF        0
@@ -826,7 +826,7 @@
 
 // <e> I2C2 (Inter-integrated Circuit Interface 2)
 // <i> Configuration settings for Driver_I2C2 in component ::CMSIS Driver:I2C
-#define RTE_I2C2                        0
+#define RTE_I2C2                        1
 #define RTE_I2C2_AF_REMAP              AFIO_UNAVAILABLE_REMAP
 
 //   <o> I2C2_SCL Pin <0=>PB10
@@ -855,7 +855,7 @@
 //     <o3> Priority <0=>Low <1=>Medium <2=>High <3=>Very High
 //     <i>  Selects DMA Priority
 //   </e>
-#define RTE_I2C2_RX_DMA                 1
+#define RTE_I2C2_RX_DMA                 0
 #define RTE_I2C2_RX_DMA_NUMBER          1
 #define RTE_I2C2_RX_DMA_CHANNEL         5
 #define RTE_I2C2_RX_DMA_PRIORITY        0
@@ -868,7 +868,7 @@
 //     <o3> Priority <0=>Low <1=>Medium <2=>High <3=>Very High
 //     <i>  Selects DMA Priority
 //   </e>
-#define RTE_I2C2_TX_DMA                 1
+#define RTE_I2C2_TX_DMA                 0
 #define RTE_I2C2_TX_DMA_NUMBER          1
 #define RTE_I2C2_TX_DMA_CHANNEL         4
 #define RTE_I2C2_TX_DMA_PRIORITY        0
@@ -878,7 +878,7 @@
 
 // <e> SPI1 (Serial Peripheral Interface 1) [Driver_SPI1]
 // <i> Configuration settings for Driver_SPI1 in component ::CMSIS Driver:SPI
-#define RTE_SPI1                        0
+#define RTE_SPI1                        1
 
 //   <e> SPI1_NSS Pin
 //   <i> Configure Pin if exists
@@ -903,7 +903,7 @@
 #endif
 
 //   <o> SPI1_MISO Pin <0=>Not Used <1=>PA6
-#define RTE_SPI1_MISO_PORT_ID_DEF       0
+#define RTE_SPI1_MISO_PORT_ID_DEF       1
 #if    (RTE_SPI1_MISO_PORT_ID_DEF == 0)
 #define RTE_SPI1_MISO_DEF               0
 #elif   (RTE_SPI1_MISO_PORT_ID_DEF == 1)
@@ -915,7 +915,7 @@
 #endif
 
 //   <o> SPI1_MOSI Pin <0=>Not Used <1=>PA7
-#define RTE_SPI1_MOSI_PORT_ID_DEF       0
+#define RTE_SPI1_MOSI_PORT_ID_DEF       1
 #if    (RTE_SPI1_MOSI_PORT_ID_DEF == 0)
 #define RTE_SPI1_MOSI_DEF               0
 #elif  (RTE_SPI1_MOSI_PORT_ID_DEF == 1)
@@ -1017,7 +1017,7 @@
 
 // <e> SPI2 (Serial Peripheral Interface 2) [Driver_SPI2]
 // <i> Configuration settings for Driver_SPI2 in component ::CMSIS Driver:SPI
-#define RTE_SPI2                        0
+#define RTE_SPI2                        1
 
 //   <e> SPI2_NSS Pin
 //   <i> Configure Pin if exists
@@ -1028,7 +1028,7 @@
 //     <o2> Bit <0-15>
 //     <i>  Selects Port Bit
 //   </e>
-#define RTE_SPI2_NSS_PIN                1
+#define RTE_SPI2_NSS_PIN                0
 #define RTE_SPI2_NSS_PORT               GPIO_PORT(1)
 #define RTE_SPI2_NSS_BIT                12
 
@@ -1043,7 +1043,7 @@
 #endif
 
 //   <o> SPI2_MISO Pin <0=>Not Used <1=>PB14
-#define RTE_SPI2_MISO_PORT_ID           0
+#define RTE_SPI2_MISO_PORT_ID           1
 #if    (RTE_SPI2_MISO_PORT_ID == 0)
 #define RTE_SPI2_MISO                   0
 #elif  (RTE_SPI2_MISO_PORT_ID == 1)
@@ -1056,7 +1056,7 @@
 #endif
 
 //   <o> SPI2_MOSI Pin <0=>Not Used <1=>PB15
-#define RTE_SPI2_MOSI_PORT_ID           0
+#define RTE_SPI2_MOSI_PORT_ID           1
 #if    (RTE_SPI2_MOSI_PORT_ID == 0)
 #define RTE_SPI2_MOSI                   0
 #elif  (RTE_SPI2_MOSI_PORT_ID == 1)
@@ -1099,7 +1099,7 @@
 
 // <e> SPI3 (Serial Peripheral Interface 3) [Driver_SPI3]
 // <i> Configuration settings for Driver_SPI3 in component ::CMSIS Driver:SPI
-#define RTE_SPI3                        0
+#define RTE_SPI3                        1
 
 //   <e> SPI3_NSS Pin
 //   <i> Configure Pin if exists
@@ -1124,7 +1124,7 @@
 #endif
 
 //   <o> SPI3_MISO Pin <0=>Not Used <1=>PB4
-#define RTE_SPI3_MISO_PORT_ID_DEF       0
+#define RTE_SPI3_MISO_PORT_ID_DEF       1
 #if    (RTE_SPI3_MISO_PORT_ID_DEF == 0)
 #define RTE_SPI3_MISO_DEF               0
 #elif  (RTE_SPI3_MISO_PORT_ID_DEF == 1)
@@ -1136,7 +1136,7 @@
 #endif
 
 //   <o> SPI3_MOSI <0=>Not Used Pin <1=>PB5
-#define RTE_SPI3_MOSI_PORT_ID_DEF       0
+#define RTE_SPI3_MOSI_PORT_ID_DEF       1
 #if    (RTE_SPI3_MOSI_PORT_ID_DEF == 0)
 #define RTE_SPI3_MOSI_DEF               0
 #elif  (RTE_SPI3_MOSI_PORT_ID_DEF == 1)
@@ -1162,7 +1162,7 @@
 #endif
 
 //   <o> SPI3_MISO Pin <0=>Not Used <1=>PC11
-#define RTE_SPI3_MISO_PORT_ID_FULL      0
+#define RTE_SPI3_MISO_PORT_ID_FULL      1
 #if    (RTE_SPI3_MISO_PORT_ID_FULL == 0)
 #define RTE_SPI3_MISO_FULL              0
 #elif  (RTE_SPI3_MISO_PORT_ID_FULL == 1)
@@ -1173,7 +1173,7 @@
 #error "Invalid SPI3_MISO Pin Configuration!"
 #endif
 //   <o> SPI3_MOSI Pin <0=>Not Used <1=>PC12
-#define RTE_SPI3_MOSI_PORT_ID_FULL      0
+#define RTE_SPI3_MOSI_PORT_ID_FULL      1
 #if    (RTE_SPI3_MOSI_PORT_ID_FULL == 0)
 #define RTE_SPI3_MOSI_FULL              0
 #elif  (RTE_SPI3_MOSI_PORT_ID_FULL == 1)
@@ -1379,10 +1379,10 @@
 
 // <e> CAN1 (Controller Area Network 1) [Driver_CAN1]
 // <i> Configuration settings for Driver_CAN1 in component ::CMSIS Driver:CAN
-#define RTE_CAN1                        0
+#define RTE_CAN1                        1
 
 //   <o> CAN1_RX Pin <0=>PA11 <1=>PB8 <2=>PD0
-#define RTE_CAN1_RX_PORT_ID             0
+#define RTE_CAN1_RX_PORT_ID             2
 #if    (RTE_CAN1_RX_PORT_ID == 0)
 #define RTE_CAN1_RX_PORT                GPIOA
 #define RTE_CAN1_RX_BIT                 11
@@ -1397,7 +1397,7 @@
 #endif
 
 //   <o> CAN1_TX Pin <0=>PA12 <1=>PB9 <2=>PD1
-#define RTE_CAN1_TX_PORT_ID             0
+#define RTE_CAN1_TX_PORT_ID             2
 #if    (RTE_CAN1_TX_PORT_ID == 0)
 #define RTE_CAN1_TX_PORT                GPIOA
 #define RTE_CAN1_TX_BIT                 12
@@ -1416,10 +1416,10 @@
 
 // <e> CAN2 (Controller Area Network 2) [Driver_CAN2]
 // <i> Configuration settings for Driver_CAN2 in component ::CMSIS Driver:CAN
-#define RTE_CAN2                        0
+#define RTE_CAN2                        1
 
 //   <o> CAN2_RX Pin <0=>PB5 <1=>PB12
-#define RTE_CAN2_RX_PORT_ID             0
+#define RTE_CAN2_RX_PORT_ID             1
 #if    (RTE_CAN2_RX_PORT_ID == 0)
 #define RTE_CAN2_RX_PORT                GPIOB
 #define RTE_CAN2_RX_BIT                 5
@@ -1743,7 +1743,7 @@
 
 // <e> USB Device Full-speed
 // <i> Configuration settings for Driver_USBD0 in component ::Drivers:USB Device
-#define RTE_USB_DEVICE                  0
+#define RTE_USB_DEVICE                  1
 
 //     <e> CON On/Off Pin
 //     <i> Configure Pin for driving D+ pull-up

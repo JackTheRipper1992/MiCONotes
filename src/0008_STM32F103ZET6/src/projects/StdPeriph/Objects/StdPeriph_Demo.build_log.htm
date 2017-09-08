@@ -22,60 +22,69 @@ Dialog DLL:      TCM.DLL V1.27.0.0
  
 <h2>Project:</h2>
 C:\Users\aplex\Desktop\U-Boot_Kernel_DTS(20170721)\src\0008_STM32F103ZET6\src\projects\StdPeriph\StdPeriph_Demo.uvprojx
-Project File Date:  09/07/2017
+Project File Date:  09/08/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Software\keil\install\ARM\ARMCC\Bin'
-*** Warning: Using Microlib and C++ file(s) might cause the linker to fail !
-  
 Rebuild target 'Target'
+compiling main.c...
 compiling led.c...
 compiling delay.c...
-compiling main.c...
-compiling exti.c...
 compiling usart1.c...
 compiling json.c...
+compiling exti.c...
 compiling clib_arm.c...
-compiling Context.cpp...
-zengjf/include/usart1.h(8): error:  #734: function "fputc(int, std::FILE *)"  conflicts with using-declaration of function "std::fputc(int, std::FILE *) C" 
-  int fputc(int ch, FILE *f);
-zengjf/include/usart1.h(9): error:  #734: function "fgetc(std::FILE *)"  conflicts with using-declaration of function "std::fgetc(std::FILE *) C" 
-  int fgetc(FILE *f);
-zengjf\Context.cpp: 0 warnings, 2 errors
-compiling jansson_config.c...
-compiling os_systick.c...
+compiling cmd_parser.c...
+compiling stm32f10x_it.c...
 compiling cmsis_os2.c...
+compiling os_systick.c...
+compiling jansson_config.c...
+compiling I2C_STM32F10x.c...
 compiling misc.c...
+compiling USART_STM32F10x.c...
 compiling stm32f10x_exti.c...
 compiling stm32f10x_gpio.c...
-assembling startup_stm32f10x_hd.s...
 compiling stm32f10x_rcc.c...
 compiling stm32f10x_usart.c...
+assembling startup_stm32f10x_hd.s...
+compiling DMA_STM32F10x.c...
+compiling GPIO_STM32F10x.c...
 compiling system_stm32f10x.c...
-compiling freertos_evr.c...
 compiling croutine.c...
+compiling freertos_evr.c...
 compiling event_groups.c...
 compiling list.c...
 compiling heap_4.c...
 compiling port.c...
 compiling queue.c...
-compiling tasks.c...
 compiling timers.c...
-".\Objects\StdPeriph_Demo.axf" - 2 Error(s), 0 Warning(s).
+compiling tasks.c...
+linking...
+Program Size: Code=37908 RO-data=1336 RW-data=240 ZI-data=12960  
+".\Objects\StdPeriph_Demo.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.1.0.pack
+                ::CMSIS:RTOS2:2.1.1 (API)
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.1
+   * Component: USART Version: 2.3.0
+   * Component: I2C Version: 2.3.0
+   * Component: CORE Version: 5.0.2
+
+Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.9.1.0.pack
-                ARM::CMSIS:RTOS2:FreeRTOS:9.1.0
+                ARM.FreeRTOS::RTOS:Core:9.0.0
                 Bundle of FreeRTOS for Cortex-M and Cortex-A
-   * Component: FreeRTOS Version: 9.1.0
-   * Component: Coroutines Version: 9.0.0
-   * Component: Timers Version: 9.0.0
-   * Component: Heap Variant: Heap_4 Version: 9.0.0
-   * Component: Event Groups Version: 9.0.0
    * Component: Core Version: 9.0.0
+   * Component: Coroutines Version: 9.0.0
+   * Component: Event Groups Version: 9.0.0
+   * Component: FreeRTOS Version: 9.1.0
    * Component: Config Variant: CMSIS RTOS2 Version: 9.0.0
+   * Component: Heap Variant: Heap_4 Version: 9.0.0
+   * Component: Timers Version: 9.0.0
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.Jansson.1.0.0.pack
@@ -85,21 +94,18 @@ Package Vendor: Keil
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
-                Keil::Device:Startup:1.0.0
+                Keil::Device:StdPeriph Drivers:Framework:3.5.1
                 STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
-   * Component: Startup Version: 1.0.0
    * Component: Framework Version: 3.5.1
-   * Component: RCC Version: 3.5.0
+   * Component: Startup Version: 1.0.0
    * Component: EXTI Version: 3.5.0
    * Component: GPIO Version: 3.5.0
    * Component: USART Version: 3.5.0
-
-Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.1.0.pack
-                ARM::CMSIS:CORE:5.0.2
-                CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: CORE Version: 5.0.2
-   * Component: RTOS2 Version: 2.1.1
+   * Component: RCC Version: 3.5.0
+   * Component: GPIO Version: 1.3
+   * Component: DMA Version: 1.2
+   * Component: I2C Version: 2.1
+   * Component: USART Version: 2.2
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\Device\STM32F103ZE
@@ -108,89 +114,110 @@ Package Vendor: ARM
   D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\CMSIS\RTOS2\FreeRTOS\Include
   D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\include
   D:\Software\keil\install\ARM\PACK\ARM\CMSIS-FreeRTOS\9.1.0\Source\portable\RVDS\ARM_CM3
+  D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include
   D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include
   D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include
   D:\Software\keil\install\ARM\PACK\Keil\Jansson\1.0.0\src
   D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
   D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc
+  D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:RTOS2:FreeRTOS:9.1.0
-      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c
-      Source file:   CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
-      Source file:   CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c
+   * Component: ::CMSIS:RTOS2:2.1.1 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
 
-   * Component: ARM.FreeRTOS::RTOS:Coroutines:9.0.0
-      Source file:   Source\croutine.c
-      Include file:  Source\include\croutine.h
+   * Component: ::CMSIS Driver:USART:2.3.0 (API)
+      Include file:  CMSIS\Driver\Include\Driver_USART.h
 
-   * Component: ARM.FreeRTOS::RTOS:Timers:9.0.0
-      Source file:   Source\timers.c
-      Include file:  Source\include\timers.h
+   * Component: ::CMSIS Driver:I2C:2.3.0 (API)
+      Include file:  CMSIS\Driver\Include\Driver_I2C.h
 
-   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:9.0.0
-      Source file:   Source\portable\MemMang\heap_4.c
-
-   * Component: ARM.FreeRTOS::RTOS:Event Groups:9.0.0
-      Source file:   Source\event_groups.c
-      Include file:  Source\include\event_groups.h
+   * Component: ARM::CMSIS:CORE:5.0.2
 
    * Component: ARM.FreeRTOS::RTOS:Core:9.0.0
-      Include file:  Source\include\FreeRTOS.h
-      Include file:  Source\include\queue.h
       Include file:  Source\include\semphr.h
       Include file:  Source\include\task.h
-      Source file:   Source\tasks.c
       Source file:   Source\list.c
+      Include file:  Source\include\FreeRTOS.h
+      Include file:  Source\include\queue.h
+      Source file:   Source\tasks.c
       Source file:   Source\queue.c
       Source file:   Source\portable\RVDS\ARM_CM3\port.c
-      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h
+
+   * Component: ARM.FreeRTOS::RTOS:Coroutines:9.0.0
+      Include file:  Source\include\croutine.h
+      Source file:   Source\croutine.c
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:9.0.0
+      Include file:  Source\include\event_groups.h
+      Source file:   Source\event_groups.c
+
+   * Component: ARM::CMSIS:RTOS2:FreeRTOS:9.1.0
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c
 
    * Component: ARM.FreeRTOS::RTOS:Config:CMSIS RTOS2:9.0.0
       Include file:  CMSIS\RTOS2\FreeRTOS\Config\ARMCM\FreeRTOSConfig.h
 
-   * Component: Keil::Data Exchange:JSON:Jansson:2.7.0
-      Library file:  lib\jansson_CM3LE.lib
-      Source file:   src\jansson_config.c
-      Include file:  src\jansson.h
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:9.0.0
+      Source file:   Source\portable\MemMang\heap_4.c
 
-   * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
-      Source file:   Device\Source\system_stm32f10x.c
-      Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+   * Component: ARM.FreeRTOS::RTOS:Timers:9.0.0
+      Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
+
+   * Component: Keil::Data Exchange:JSON:Jansson:2.7.0
+      Source file:   src\jansson_config.c
+      Library file:  lib\jansson_CM3LE.lib
+      Include file:  src\jansson.h
 
    * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
       Include file:  Device\StdPeriph_Driver\inc\misc.h
-      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
       Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
-      Source file:   Device\StdPeriph_Driver\src\misc.c
       Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
 
-   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\system_stm32f10x.c
 
    * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
 
    * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
 
-   * Component: ARM::CMSIS:CORE:5.0.2
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
 
-   * Component: ::CMSIS:RTOS2:2.1.1 (API)
-      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
-Target not created.
-Build Time Elapsed:  00:00:06
+   * Component: Keil::Device:GPIO:1.3
+      Source file:   RTE_Driver\GPIO_STM32F10x.c
+      Include file:  RTE_Driver\GPIO_STM32F10x.h
+
+   * Component: Keil::Device:DMA:1.2
+      Include file:  RTE_Driver\DMA_STM32F10x.h
+      Source file:   RTE_Driver\DMA_STM32F10x.c
+
+   * Component: Keil::CMSIS Driver:I2C:2.1
+      Source file:   RTE_Driver\I2C_STM32F10x.c
+
+   * Component: Keil::CMSIS Driver:USART:2.2
+      Source file:   RTE_Driver\USART_STM32F10x.c
+Build Time Elapsed:  00:00:07
 </pre>
 </body>
 </html>

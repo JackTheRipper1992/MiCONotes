@@ -1,21 +1,5 @@
 #include "zengjf.h"
 
-extern osSemaphoreId_t sid_Thread_Semaphore; 
-
-void EXTI0_IRQHandler(void)
-{     
-    osSemaphoreRelease (sid_Thread_Semaphore);
-
-    EXTI_ClearITPendingBit(EXTI_Line0); 
-}
-
-void EXTI4_IRQHandler(void)
-{   
-    osSemaphoreRelease (sid_Thread_Semaphore);
-    
-    EXTI_ClearITPendingBit(EXTI_Line4); 
-}
-
 static void EXTI_NVIC_Configuration(void)
 {
     NVIC_InitTypeDef NVIC_InitStructure;

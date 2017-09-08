@@ -72,8 +72,16 @@ int fgetc(FILE *f)
 
     if (ch == '\r' || ch == '\n')
     {
-        fputc('\n', f);
         fputc('\r', f);
+        fputc('\n', f);
+        /*
+        fputc('c', f);
+        fputc('m', f);
+        fputc('d', f);
+        fputc(' ', f);
+        fputc('#', f);
+        fputc(' ', f);
+        */
     } else {
         fputc(ch, f);
     }

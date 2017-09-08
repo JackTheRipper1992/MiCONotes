@@ -9,3 +9,7 @@
 .\objects\dma_stm32f10x.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_compiler.h
 .\objects\dma_stm32f10x.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Include\cmsis_armcc.h
 .\objects\dma_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
+.\objects\dma_stm32f10x.o: .\RTE\Device\STM32F103ZE\stm32f10x_conf.h
+.\objects\dma_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+.\objects\dma_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
+.\objects\dma_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h

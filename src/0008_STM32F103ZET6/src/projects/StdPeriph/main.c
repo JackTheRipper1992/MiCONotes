@@ -1,9 +1,10 @@
 #include "zengjf.h"
 
-char str[512] = {0};
 osSemaphoreId_t sid_Thread_Semaphore; 
 int count = 0;
-    
+extern char* welcome_msg;
+
+
 void vTaskLedRed(void *p)
 {
     for (;;)
@@ -25,11 +26,11 @@ void vTaskEXTILed(void *p)
 
 void vTaskDebugPort(void *p)
 {
-
+    printf("%s", welcome_msg);
+    printf("AplexOS # ");
     for (;;)
     {
-        scanf("%s", str);
-        memset(str, 0, strlen(str));
+        get_cmd_parser_char();
         led_toggle(GPIOE, GPIO_Pin_5);
     }
 }
@@ -41,10 +42,6 @@ int main(void)
     EXTI_Config();
     
     jansson_pack_test();
-
-    printf("\r\n Hardware Auto Detect System.");
-    printf("\r\n Version: 0.0.1");
-    printf("\r\n           ---- Designed By zengjf \r\n");
 
     // System Initialization
     SystemCoreClockUpdate();

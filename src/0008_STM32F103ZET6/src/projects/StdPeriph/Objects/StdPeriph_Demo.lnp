@@ -6,6 +6,7 @@
 ".\objects\exti.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\cmd_parser.o"
+".\objects\i2c_slave.o"
 ".\objects\clib_arm.o"
 ".\objects\cmsis_os2.o"
 ".\objects\os_systick.o"

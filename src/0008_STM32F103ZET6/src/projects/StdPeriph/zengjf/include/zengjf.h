@@ -9,7 +9,7 @@
 #include "usart1.h"
 #include "exti.h"
 #include "cmd_parser.h"
-#include "i2c.h"
+#include "i2c_slave.h"
 
 #include <stdio.h>
 #include <string.h>

@@ -23,7 +23,7 @@
 .\objects\usart1.o: zengjf/include/exti.h
 .\objects\usart1.o: zengjf/include/cmd_parser.h
 .\objects\usart1.o: zengjf/include/zengjf.h
-.\objects\usart1.o: zengjf/include/i2c.h
+.\objects\usart1.o: zengjf/include/i2c_slave.h
 .\objects\usart1.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\string.h
 .\objects\usart1.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\usart1.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\cmsis_os2.h

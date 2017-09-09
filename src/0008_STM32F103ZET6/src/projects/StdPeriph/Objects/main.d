@@ -31,4 +31,5 @@
 .\objects\main.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_I2C.h
 .\objects\main.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_Common.h
+.\objects\main.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\Driver\Include\Driver_USART.h
 .\objects\main.o: zengjf/include/Context.h

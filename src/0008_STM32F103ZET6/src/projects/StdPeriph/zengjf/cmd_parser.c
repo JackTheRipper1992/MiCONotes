@@ -47,23 +47,42 @@ char* welcome_msg =
     "\r\n\r\nHardware Auto Detect System v0.0.1 (" __DATE__ ")\r\n"
     "\r\n               ---- Designed By AplexOS Team \r\n\r\n";
 
-int shell_cmd_list(char *args);
+int shell_cmd_help(char *args);
+int shell_cmd_reset(char *args);
 
 shell_cmds microcli_shell_cmds =
 {
-    .count = 1,
+    .count = 3,
     .cmds  = {
         {
-            .cmd     = "list",
+            .cmd     = "h",
+            .desc    = "help info",
+            .func    = shell_cmd_help,
+        },
+        {
+            .cmd     = "help",
             .desc    = "List available",
-            .func    = shell_cmd_list,
+            .func    = shell_cmd_help,
+        },
+        {
+            .cmd     = "reset",
+            .desc    = "reset system",
+            .func    = shell_cmd_reset,
         },
     },
 };
 
-int shell_cmd_list(char *args) 
+int shell_cmd_help(char *args) 
 {
-    printf("%s", welcome_msg);
+    printf("execute %s function.\r\n", __func__);
+    return 0;
+}
+
+int shell_cmd_reset(char *args)
+{
+    __set_FAULTMASK(1);//关闭总中断
+    NVIC_SystemReset();//请求单片机重启   
+    
     return 0;
 }
 
@@ -77,12 +96,13 @@ int shell_process(char *cmd_line)
             if (cmd_line[strlen(microcli_shell_cmds.cmds[i].cmd)] == ' ') 
             {
                 microcli_shell_cmds.cmds[i].func(&cmd_line[strlen(microcli_shell_cmds.cmds[i].cmd) + 1]);
-            } else if(strlen(cmd_line) == strlen(microcli_shell_cmds.cmds[i].cmd)) {
+                return 0;
+            } else if (strcmp(microcli_shell_cmds.cmds[i].cmd, cmd_line) == 0 ) {
                 microcli_shell_cmds.cmds[i].func(NULL);
+                return 0;
             }
-            
-            return 0;
         }
+        
     }
     
     printf("unsupport command.");

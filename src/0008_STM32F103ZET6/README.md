@@ -10,6 +10,7 @@
 
 ## 学习测试项目
 
+* [015_CMSIS-Driver_I2C_Slave](src/015_CMSIS-Driver_I2C_Slave.md)
 * [014_Command_Line_Interpreter](src/014_Command_Line_Interpreter.md)
 * [013_CMSIS-Driver_UART_As_Debug_Port](src/013_CMSIS-Driver_UART_As_Debug_Port.md)
 * [012_Keil_JSON_Parse_Lib](src/012_Keil_JSON_Parse_Lib.md)

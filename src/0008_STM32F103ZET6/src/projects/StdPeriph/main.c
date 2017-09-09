@@ -35,13 +35,53 @@ void vTaskDebugPort(void *p)
     }
 }
 
+// I2C driver instance
+extern ARM_DRIVER_I2C Driver_I2C1; 
+static ARM_DRIVER_I2C *i2cDev = &Driver_I2C1;
+ 
+static volatile uint32_t event = 0;
+ 
+static void I2C_DrvEvent (uint32_t e) {
+    event |= e;
+}
+
+void vTaskI2C0(void *p)
+{
+    uint8_t cnt = 0;
+ 
+    /* Initialize I2C peripheral */
+    i2cDev->Initialize(I2C_DrvEvent);
+ 
+    /* Power-on SPI peripheral */
+    i2cDev->PowerControl(ARM_POWER_FULL);
+ 
+    /* Configure USART bus*/
+    i2cDev->Control(ARM_I2C_OWN_ADDRESS, 0x33);
+    
+    printf("\r\nI2C0 thread start.\r\n\r\n");
+ 
+    while (1) {
+        /* Receive chuck */
+        i2cDev->SlaveReceive(&cnt, 1);
+        while ((event & ARM_I2C_EVENT_TRANSFER_DONE) == 0);
+        event &= ~ARM_I2C_EVENT_TRANSFER_DONE;
+        
+        printf("Receive a byte data: %x\r\n", cnt);
+ 
+        /* Transmit chunk back */
+        i2cDev->SlaveTransmit(&cnt, 1);
+        while ((event & ARM_I2C_EVENT_TRANSFER_DONE) == 0);
+        event &= ~ARM_I2C_EVENT_TRANSFER_DONE;
+        
+        printf("Send a byte data: %x\r\n", cnt);
+    }
+}
+
 int main(void)
 {    
     USART1_Config(115200);
     LED_GPIO_Config();
     EXTI_Config();
-    
-    jansson_pack_test();
 
     // System Initialization
     SystemCoreClockUpdate();
@@ -54,6 +94,7 @@ int main(void)
     
     osThreadNew(vTaskLedRed, NULL, NULL);       // Create application thread
     osThreadNew(vTaskDebugPort, NULL, NULL);    // Create application thread
+    osThreadNew(vTaskI2C0, NULL, NULL);         // Create application thread
     
     sid_Thread_Semaphore = osSemaphoreNew(1, 0, NULL);
     if (!sid_Thread_Semaphore) {

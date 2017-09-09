@@ -11,6 +11,10 @@
 * Project添加库：
   ![../img/Keil_JSON_Lib.png](../img/Keil_JSON_Lib.png)
 
+## 注意事项
+
+在有CMSIS RTOS里Jansson运作会出问题，目前没有去跟踪问题出在哪里。
+
 ## Test Demo
 * 头文件:
   ```C

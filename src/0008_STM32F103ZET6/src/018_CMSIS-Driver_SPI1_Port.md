@@ -67,7 +67,7 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
   ```C
   char ch = 0;
   
-  Init_SPI();
+  SPI2_Init();
   
   while(1) {
       ch = SPI2_ReadWriteByte('a');

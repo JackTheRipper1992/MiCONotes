@@ -1,4 +1,4 @@
-# CMSIS Driver UART2 Port
+# CMSIS Driver SPI1 Port
 
 ## 参考资料
 
@@ -10,7 +10,7 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
 
 ## 裸板示例
 
-* Source Code
+* SPI2 Source Code
   ```C
   //SPIx 读写一个字节
   //TxData:要写入的字节
@@ -78,7 +78,7 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
 
 ## SPI CMSIS Driver测试
 
-* Source Code：
+* SPI1 Source Code：
   ```C
   /* SPI Driver */
   extern ARM_DRIVER_SPI Driver_SPI1;

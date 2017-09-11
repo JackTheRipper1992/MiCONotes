@@ -1,4 +1,4 @@
-# CMSIS Driver SPI1 Port
+# CMSIS Driver SPI Port
 
 ## 参考资料
 
@@ -64,7 +64,7 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
   }
   ```
 * Test Code：
-  ```
+  ```C
   char ch = 0;
   
   SPI2_Init();

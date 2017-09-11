@@ -25,6 +25,7 @@
 .\objects\cmd_parser.o: zengjf/include/cmd_parser.h
 .\objects\cmd_parser.o: zengjf/include/zengjf.h
 .\objects\cmd_parser.o: zengjf/include/i2c_slave.h
+.\objects\cmd_parser.o: zengjf/include/spi_master.h
 .\objects\cmd_parser.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\string.h
 .\objects\cmd_parser.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\cmd_parser.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\cmsis_os2.h

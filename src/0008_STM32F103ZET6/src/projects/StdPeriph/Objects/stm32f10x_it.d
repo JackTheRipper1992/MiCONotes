@@ -25,6 +25,7 @@
 .\objects\stm32f10x_it.o: zengjf/include/cmd_parser.h
 .\objects\stm32f10x_it.o: zengjf/include/zengjf.h
 .\objects\stm32f10x_it.o: zengjf/include/i2c_slave.h
+.\objects\stm32f10x_it.o: zengjf/include/spi_master.h
 .\objects\stm32f10x_it.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\string.h
 .\objects\stm32f10x_it.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\stm32f10x_it.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\cmsis_os2.h

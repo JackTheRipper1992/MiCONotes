@@ -10,6 +10,7 @@
 #include "exti.h"
 #include "cmd_parser.h"
 #include "i2c_slave.h"
+#include "spi_master.h"
 
 #include <stdio.h>
 #include <string.h>

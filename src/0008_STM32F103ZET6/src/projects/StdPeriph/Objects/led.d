@@ -25,6 +25,7 @@
 .\objects\led.o: zengjf/include/cmd_parser.h
 .\objects\led.o: zengjf/include/zengjf.h
 .\objects\led.o: zengjf/include/i2c_slave.h
+.\objects\led.o: zengjf/include/spi_master.h
 .\objects\led.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\string.h
 .\objects\led.o: D:\Software\keil\install\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\led.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\cmsis_os2.h

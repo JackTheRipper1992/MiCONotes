@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\StdPeriph_Demo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\StdPeriph_Demo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Mon Sep 11 11:33:31 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Mon Sep 11 13:22:50 2017
 <BR><P>
 <H3>Maximum Stack Usage =        256 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -197,7 +197,7 @@ Function Pointers
  <LI><a href="#[48]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_stm32f10x_hd.o(.text)
  <LI><a href="#[49]">fputc</a> from usart1.o(i.fputc) referenced from printf5.o(i.__0printf$5)
  <LI><a href="#[46]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
- <LI><a href="#[51]">mySPI_callback</a> from main.o(i.mySPI_callback) referenced from main.o(i.vTaskSPI1)
+ <LI><a href="#[51]">mySPI_callback</a> from spi_master.o(i.mySPI_callback) referenced from spi_master.o(i.vTaskSPI1)
  <LI><a href="#[52]">prvIdleTask</a> from tasks.o(i.prvIdleTask) referenced from tasks.o(i.vTaskStartScheduler)
  <LI><a href="#[50]">prvTaskExitError</a> from port.o(i.prvTaskExitError) referenced from port.o(i.pxPortInitialiseStack)
  <LI><a href="#[53]">prvTimerTask</a> from timers.o(i.prvTimerTask) referenced from timers.o(i.xTimerCreateTimerTask)
@@ -207,7 +207,7 @@ Function Pointers
  <LI><a href="#[4f]">vTaskEXTILed</a> from main.o(i.vTaskEXTILed) referenced from main.o(i.main)
  <LI><a href="#[4d]">vTaskI2C0</a> from main.o(i.vTaskI2C0) referenced from main.o(i.main)
  <LI><a href="#[4b]">vTaskLedRed</a> from main.o(i.vTaskLedRed) referenced from main.o(i.main)
- <LI><a href="#[4e]">vTaskSPI1</a> from main.o(i.vTaskSPI1) referenced from main.o(i.main)
+ <LI><a href="#[4e]">vTaskSPI1</a> from spi_master.o(i.vTaskSPI1) referenced from main.o(i.main)
 </UL>
 <P>
 <H3>
@@ -590,16 +590,16 @@ Global Symbols
 <P><STRONG><a name="[10]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm32f10x_it.o(i.EXTI0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = EXTI0_IRQHandler &rArr; osSemaphoreRelease &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[14]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm32f10x_it.o(i.EXTI4_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = EXTI4_IRQHandler &rArr; osSemaphoreRelease &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
@@ -890,9 +890,9 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shell_process
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shell_cmd_help
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSPI1
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_data_transmission
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_cmd_parser_char
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSPI1
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskEXTILed
 <LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDebugPort
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -968,7 +968,7 @@ Global Symbols
 <LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDebugPort
 </UL>
 
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = main &rArr; osThreadNew &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadNew
@@ -983,12 +983,12 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[51]"></a>mySPI_callback</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, main.o(i.mySPI_callback))
+<P><STRONG><a name="[51]"></a>mySPI_callback</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, spi_master.o(i.mySPI_callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = mySPI_callback &rArr; osSemaphoreRelease &rArr; xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> main.o(i.vTaskSPI1)
+<BR>[Address Reference Count : 1]<UL><LI> spi_master.o(i.vTaskSPI1)
 </UL>
 <P><STRONG><a name="[128]"></a>osDelay</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, cmsis_os2.o(i.osDelay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = osDelay &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
@@ -1048,7 +1048,8 @@ Global Symbols
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateCountingSemaphore
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vQueueDelete
 </UL>
-<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSPI1
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[d4]"></a>osSemaphoreRelease</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, cmsis_os2.o(i.osSemaphoreRelease))
@@ -1060,9 +1061,9 @@ Global Symbols
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGiveFromISR
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mySPI_callback
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
-<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mySPI_callback
 </UL>
 
 <P><STRONG><a name="[125]"></a>osThreadNew</STRONG> (Thumb, 216 bytes, Stack size 56 bytes, cmsis_os2.o(i.osThreadNew))
@@ -1314,11 +1315,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
 </UL>
 
-<P><STRONG><a name="[4e]"></a>vTaskSPI1</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, main.o(i.vTaskSPI1))
-<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = vTaskSPI1 &rArr; osSemaphoreAcquire &rArr; xQueueGenericReceive &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
+<P><STRONG><a name="[4e]"></a>vTaskSPI1</STRONG> (Thumb, 140 bytes, Stack size 0 bytes, spi_master.o(i.vTaskSPI1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = vTaskSPI1 &rArr; osSemaphoreNew &rArr; xQueueCreateCountingSemaphoreStatic &rArr; xQueueGenericCreateStatic &rArr; prvInitialiseNewQueue &rArr; xQueueGenericReset &rArr; xTaskRemoveFromEventList
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
+<BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
@@ -1621,33 +1623,33 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> i2c_slave.o(i.i2c_data_transmission)
 </UL>
 <P><STRONG><a name="[12b]"></a>__get_BASEPRI</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cmsis_os2.o(i.__get_BASEPRI))
-<BR><BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadNew
+<BR><BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadNew
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelStart
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelInitialize
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 </UL>
 
 <P><STRONG><a name="[129]"></a>__get_IPSR</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cmsis_os2.o(i.__get_IPSR))
-<BR><BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadNew
+<BR><BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadNew
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelStart
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelInitialize
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 </UL>
 
 <P><STRONG><a name="[12a]"></a>__get_PRIMASK</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cmsis_os2.o(i.__get_PRIMASK))
-<BR><BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadNew
+<BR><BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreRelease
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadNew
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreNew
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSemaphoreAcquire
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelStart
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelInitialize
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 </UL>
 
 <P><STRONG><a name="[5e]"></a>I2C1_Control</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, i2c_stm32f10x.o(i.I2C1_Control))

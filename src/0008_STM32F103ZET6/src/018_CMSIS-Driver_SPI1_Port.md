@@ -64,8 +64,8 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
   }
   ```
 * Test Code：
-  ```C
-  char ch = 0;
+  ```
+  char ch = 0;
   
   SPI2_Init();
   

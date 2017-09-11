@@ -18,6 +18,7 @@
 #include "stdbool.h"
 #include "Driver_I2C.h"
 #include "Driver_USART.h"
+#include "Driver_SPI.h"
 
 #include "Context.h"
 

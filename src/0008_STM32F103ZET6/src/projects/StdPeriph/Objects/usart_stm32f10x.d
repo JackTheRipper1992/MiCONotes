@@ -15,6 +15,7 @@
 .\objects\usart_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\usart_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
 .\objects\usart_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\usart_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_spi.h
 .\objects\usart_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\usart_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
 .\objects\usart_stm32f10x.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\RTE_Driver\GPIO_STM32F10x.h

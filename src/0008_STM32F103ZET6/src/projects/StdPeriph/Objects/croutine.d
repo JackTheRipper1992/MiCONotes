@@ -15,6 +15,7 @@
 .\objects\croutine.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\croutine.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
 .\objects\croutine.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\croutine.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_spi.h
 .\objects\croutine.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\croutine.o: D:\Software\keil\install\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
 .\objects\croutine.o: D:\Software\keil\install\ARM\PACK\ARM\CMSIS\5.1.0\CMSIS\RTOS2\Include\os_tick.h

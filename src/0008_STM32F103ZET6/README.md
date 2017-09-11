@@ -10,6 +10,7 @@
 
 ## 学习测试项目
 
+* [018_CMSIS-Driver_SPI1_Port](src/018_CMSIS-Driver_SPI1_Port.md)
 * [017_CMSIS-Driver_UART2_Port](src/017_CMSIS-Driver_UART2_Port.md)
 * [016_GPIO_AFIO_STM32_Datasheet_Hacking](src/016_GPIO_AFIO_STM32_Datasheet_Hacking.md)
 * [015_CMSIS-Driver_I2C_Slave](src/015_CMSIS-Driver_I2C_Slave.md)

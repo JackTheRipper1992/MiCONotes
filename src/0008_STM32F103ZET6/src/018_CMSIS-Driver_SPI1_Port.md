@@ -64,8 +64,8 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
   }
   ```
 * Test Code：
-  ```
-  char ch = 0;
+  ```C
+  char ch = 0;
   
   Init_SPI();
   
@@ -79,7 +79,7 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
 ## SPI CMSIS Driver测试
 
 * Source Code：
-  ```
+  ```C
   /* SPI Driver */
   extern ARM_DRIVER_SPI Driver_SPI1;
   osSemaphoreId_t spi_Thread_Semaphore; 
@@ -148,7 +148,7 @@ SPI_MISO连接SPI_MOSI进行Loop循环测试。
   }
   ```
 * 线程创建：
-  ```
+  ```C
   spi_Thread_Semaphore = osSemaphoreNew(1, 0, NULL);
   if (!spi_Thread_Semaphore) {
       printf("get spi_Thread_Semaphore error.\r\n");  // Semaphore object not created, handle failure

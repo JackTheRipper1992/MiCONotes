@@ -10,6 +10,7 @@
 
 ## 学习测试项目
 
+* [019_STM32CubeMX_Learning](src/019_STM32CubeMX_Learning.md)
 * [018_CMSIS-Driver_SPI1_Port](src/018_CMSIS-Driver_SPI1_Port.md)
 * [017_CMSIS-Driver_UART2_Port](src/017_CMSIS-Driver_UART2_Port.md)
 * [016_GPIO_AFIO_STM32_Datasheet_Hacking](src/016_GPIO_AFIO_STM32_Datasheet_Hacking.md)
